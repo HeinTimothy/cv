@@ -4,74 +4,96 @@
 <head>
   <meta charset="utf-8">
   <title>Timmy's Personal Site</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/2e5d08bfc9.js" crossorigin="anonymous"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <table>
-    <tr>
-      <td>
-        <h1>Timmy</h1>
-        <p><em>Computer Engineering Student at <strong><a href="https://www.purdue.edu/">Purdue University</a></strong></em></p>
-        <p>I make my own coffee</p>
-      </td>
-      <td>
-        <img src="The-Tulip.png" alt="">
-      </td>
-    </tr>
-  </table>
+  <section id="sidebar">
+    <div class="center-box">
+      <a href="#introduction">Home</a>
+      <a href="#projects">Work</a>
+      <a href="#about">About</a>
+    </div>
+  </section>
 
-  <hr>
+  <article id="scroller">
+    <section class="scroll-page"id="introduction">
+      <div class="center-box">
+        <h2 class="section-heading">Howdy, my name is Timmy</h2>
+        <hr>
+        <h1>I'm a maker, a barista, and a venture guy</h1>
+        <a href="resume.pdf" target="blank">
+          <button class="btn btn-outline-dark" type="button" name="button"><span class="footer-text">Check out my resume here!</span></button> <br>
+        </a>
+        <a href="#projects" class="footer-text">
+          <div class="bouncing-icon-container"><i class="fas fa-chevron-down"></i></div>
+          if you want to see more, take a look below...
+          <div class="bouncing-icon-container"><i class="fas fa-chevron-down"></i></div>
+        </a>
+      </div>
+    </section>
 
-  <h3>My Experience</h3>
-  <ul>
-    <li>Research Assistant at Roble Ventures</li>
-    <li>Senior Patrol Leader in Boy Scouts</li>
-  </ul>
+    <section class="scroll-page" id="projects">
+      <div class="center-box">
+        <h2 class="section-heading">I beleive reputation comes from ones work...</h2>
 
-  <h3>Education</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>School</th>
-      </tr>
-    </thead>
-    <tr>
-      <td>2015-2020</td>
-      <td>Los Altos High</td>
-    </tr>
-    <tr>
-      <td>2020-</td>
-      <td>Purdue University</td>
-    </tr>
-  </table>
+        <div class="slideshow">
+          <div class="cards">
 
-  <h3>Skills</h3>
-  <table>
-    <tr>
-      <td>Python</td>
-      <td>⭐⭐⭐</td>
-      <td>CAD</td>
-      <td>⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Sketching</td>
-      <td>⭐⭐</td>
-      <td>Financial Analysis</td>
-      <td>⭐⭐⭐</td>
-    </tr>
-    <tr>
-      <td>Web Development</td>
-      <td>⭐⭐⭐⭐</td>
-      <td>Computer Science</td>
-      <td>⭐⭐</td>
-    </tr>
-  </table>
+          </div>
 
-  <hr>
+        </div>
+        <div class="card project-card"> <!-- circle -->
+          <h4 class="card-header">circle</h4>
+        </div>
 
-  <a href="hobbies.html">My Hobbies</a>
-  <a href="contact.html">Contact Me</a>
+        <div class="card project-card"> <!-- JMEC -->
+          <h4 class="card-header">John Martinson Entrepeneurial Center</h4>
+        </div>
+
+        <div class="card project-card"> <!-- Roble -->
+          <h4 class="card-header">Roble Ventures</h4>
+        </div>
+
+        <div class="card project-card"> <!-- Scouts -->
+          <h4 class="card-header">BSA Scouts Eagle Project</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroll-page" id="about">
+      <div class="center-box">
+        <h2 class="section-heading">...but who you are off the clock is just as important.</h2>
+
+        <div class="card hobby-card"> <!-- Tea & Coffee -->
+          <h4 class="card-header">Tea & Coffee</h4>
+        </div>
+
+        <div class="card hobby-card"> <!-- Skateboarding -->
+          <h4 class="card-header">Skateboarding</h4>
+        </div>
+
+        <div class="card hobby-card"> <!-- Reading -->
+          <h4 class="card-header">Litterature</h4>
+        </div>
+
+        <div class="card hobby-card"> <!-- Writing -->
+          <h4 class="card-header">Writing</h4>
+        </div>
+      </div>
+    </section>
+  </article>
 </body>
 
 </html>
