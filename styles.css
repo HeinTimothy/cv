@@ -22,6 +22,21 @@ h1 {
   text-align: center;
 }
 
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+}
+
 #scroller {
   position: absolute;
   padding: 0 12%;
@@ -45,13 +60,31 @@ h1 {
   align-items: center;
 }
 
+.center-box {
+  width: 100%;
+}
+
+.card-col {
+  padding: 1% 5%;
+}
+
 .card {
-  width: 30%;
+}
+
+.card-link:hover {
+  color: #3f3f3f;
+  text-decoration: none;
+}
+
+.card-link {
+  color: #3f3f3f;
+  text-decoration: none;
 }
 
 .card-header {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 900;
+  text-align: center;
 }
 
 #sidebar {
@@ -114,11 +147,3 @@ h1 {
       0%, 100% { top: -.75rem; }
       50%      {top: .75rem;}
     }
-
-.footer-text {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  font-size: 1.2rem;
-}
