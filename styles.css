@@ -102,9 +102,9 @@ h1 {
   border: none;
 }
 
-#introduction a {
-  color: #000;
-  text-decoration: none;
+a {
+  color: #3f3f3f !important;
+  text-decoration: none !important;
 }
 
 .bouncing-icon-container {
@@ -129,142 +129,82 @@ h1 {
     }
 
 
-.carousel {
-  width: inherit;
-  height: 70vh;
-  padding: 0 8% 5%;
-}
 
-.carousel-control-prev, .carousel-control-next {
-  width: 10%;
-}
-
-.carousel-control-prev-icon {
- background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%3f3f3f' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%3f3f3f' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-indicators  li{
-  background-color: #3f3f3f;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-.carousel-item {
-  width: 100%;
-  height: 100%;
-  padding: 3%;
-}
-
-.card-page {
-  height: 100%;
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.card-header {
+.sub-heading {
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.project-section {
+  position: relative;
+}
+
+#projects .description {
+  font-size: 1rem;
+  width: 80%;
+  height: auto !important;
+}
+
+#projects img {
+  position: absolute;
+  max-width: 15%;
+  object-fit: contain;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#projects .left img {
+  right: 0;
+}
+
+#projects .left {
+  text-align: left;
+  margin-right: auto;
+}
+
+#projects .right img {
+  left: 0;
+}
+
+#projects .right {
+  text-align: right;
+  margin-left: auto;
+}
+
+#projects .right p {
+  margin-left: auto;
+}
+
+#bio {
+  position: relative;
+}
+
+#bio p, h2 {
+  margin-left: 20rem;
+}
+
+#contact {
+  font-size: 2rem;
+  margin-top: 5rem;
   text-align: center;
 }
 
-.card-link:hover {
+#contact .icon {
   color: #3f3f3f;
-  text-decoration: none;
+  padding: 1rem;
 }
 
-.card-link {
-  color: #3f3f3f;
-  text-decoration: none;
-}
-
-#scouts #scouts-logo {
-  width: 30%;
-  height: 50%;
+#profile {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 18rem;
+  height: 24rem;
+  border-radius: 5rem;
   object-fit: cover;
+  object-position: 20% 50%;
   float: left;
-  margin: 1% 5%;
-}
-
-#JMEC .item-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#JMEC .card-body {
-  padding: 0;
-}
-
-#JMEC p {
-  padding: 1.25rem 1.25rem 0 0;
-}
-
-#roble-ventures .item-img {
-  margin: 1% 5%;
-  max-width: 30%;
-  max-height: 50%;
-}
-
-#roble-ventures #roble-ventures-logo {
-  float: right;
-}
-
-#roble-ventures #roble-ventures-slides {
-  float: left;
-  clear: right;
-}
-
-#tea .item-img {
-  margin: 0 5%;
-  width: 20%;
-  height: 50%;
-  object-fit: cover;
-}
-
-#tea #tea-1 {
-  float: right;
-}
-
-#tea #tea-2 {
-  float: right;
-  clear: right;
-}
-
-#litterature .card-body{
-  padding: 0;
-}
-
-#litterature .col-6 {
-  height: 100%;
-}
-
-#litterature p {
-  padding: 1.24rem;
-}
-
-#litterature .item-img {
-  width: 50%;
-  height: 50%;
-  object-position: cover;
-  float: right;
-}
-
-#litterature #books-top {
-  width: 100%;
-  height: 50%;
-}
-
-#litterature #books-bottom {
-  width: 100%;
-  height: 50%;
+  margin: 0 2rem 0 0;
 }
