@@ -176,6 +176,11 @@ a {
   margin-left: auto;
 }
 
+
+#about {
+  position: relative;
+}
+
 #bio {
   position: relative;
 }
@@ -185,9 +190,12 @@ a {
 }
 
 #contact {
+  position: absolute;
   font-size: 2rem;
-  margin-top: 5rem;
+  bottom: 3rem;
   text-align: center;
+  width: 100%;
+  margin: auto;
 }
 
 #contact .icon {
